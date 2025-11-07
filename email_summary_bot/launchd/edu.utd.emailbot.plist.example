@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>edu.utd.emailbot</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/Users/REPLACE_ME/email_summary_bot/run_once.py</string>
+        <string>--env</string>
+        <string>/Users/REPLACE_ME/email_summary_bot/.env</string>
+    </array>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>/Users/REPLACE_ME/email_summary_bot/logs/launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/REPLACE_ME/email_summary_bot/logs/launchd.log</string>
+    <key>WorkingDirectory</key>
+    <string>/Users/REPLACE_ME/email_summary_bot</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+</dict>
+</plist>
